@@ -43,6 +43,8 @@ cp .env.example .env
 docker compose up -d
 ```
 
+Postgres is exposed on `localhost:5433`, so make sure `DATABASE_URL` matches that port because i already a port running on localhost:5432. 
+
 4. Run DB migration and seed:
 
 ```bash
